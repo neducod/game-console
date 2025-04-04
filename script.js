@@ -4,6 +4,18 @@ AOS.init({
     once: true,     // Whether animation should happen only once (set to false to repeat on scroll)
   });
 
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+
+
+
+
+
+
 
 
 //POPUP FOR ABOUT.HTML
