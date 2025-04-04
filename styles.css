@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 1300px;
+    background-color: rgb(128, 196, 233);
+    display: flex;
+    gap: 900px;
+    padding: 19px;
+    margin-top: 30px;
+    border-radius: 18px;
+}
+nav ul{
+    display: flex;
+    gap: 30px
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+.hero-section-one{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section-one .first{
+    width: 650px;
+    height: 450px;
+    border-radius: 20px;
+  /*  display: grid;
+    gap: 10px;*/
+    place-items: center;
+    background-color: rgb(128, 196, 233);
+}
+.div-text{
+    display: grid;
+    gap: 10px;
+}
+.div-text h3{
+    font-size: 30px;
+}
+.div-text p{
+    font-size: 18px;
+    width: 400px;
+}
+.div-text button{
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.div-text button:hover{
+    background-color: rgb(233, 233, 150);
+    border: 1px solid black;
+}
+
+.div-text button a{
+    text-decoration: none;
+    color: black;
+}
+.div-text button a:hover{
+    color: white;
+}
+.hero-section-one .second{
+    width: 200px;
+    height: 450px;
+    background-color: gray;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.hero-section-one .third img{
+    border-radius: 10px;
+}
+.hero-section-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.div-color{
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: rgb(128, 196, 233);
+}
+.hero-section-two img{
+    border-radius: 20px;
+}
+.another-frame{
+    height: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgb(128, 196, 233);
+}
+.another-frame p{
+    font-size: 19px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-bottom: 8px;
+}
+.another-frame h3{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 70px;
+}
+.another-frame h3 a{
+    text-decoration: none;
+    color: black;
+}
+.frame-104{
+    height: 700px;
+    background-color: rgb(44, 42, 42);
+    border-radius: 20px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: self-end;
+    align-items: self-end;
+}
+.frame-104 p{
+    color: rgb(155, 198, 226);
+    margin-bottom: 50px;
+}
+.frame-104 h3{
+    color: rgb(155, 198, 226);
+    width: 550px;
+    font-size: 25px;
+}
+.frame-105{
+    padding: 80px;
+}
+.frame-106{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.frame-106 img{
+    border-radius: 20px;
+}
+.frame-107{
+    display: flex;
+    gap: 10px;
+    padding: 100px;
+}
+.frame-108s{
+   /* display: inline;
+    place-items: center;
+    /* gap: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 290px;
+    height: 305px;
+    border-radius: 20px;
+    color: rgb(155, 198, 226);
+    background-color: rgb(44, 42, 42);
+}
+.frame-108s h5{
+    width: 200px;
+    margin-bottom: 50px;
+}
+.frame-202{
+    padding: 20px;
+}
+.frame-2021{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    color: rgb(155, 198, 226);
+}
+.frame-2021 p{
+    font-size: 20px;
+}
+.frame-2021 h3{
+    font-size: 32px;
+}
+.frame-202-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame-202 .one img{
+    border-radius: 20px;
+}
+.frame-202 .onee{
+    width: 300px;
+    height: 507px;
+    border-radius: 20px;
+    background-color: rgb(44, 42, 42);
+}
+.section-e{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-right: 40px;
+}
+.section-etwo{
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    display: inline;
+    padding: 30px;
+    padding-left: 70px;
+    background-color: rgb(128, 196, 233);
+}
+.section-etwo p{
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 10px
+}
+.section-etwo h4{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.section-etwo h3{
+    font-weight: 800;
+    font-size: 50px;
+}
+.section-eone{
+    display: grid;
+    gap: 40px;
+    padding: 30px;
+    height: 400px;
+    margin-right: 170px;
+    color: rgb(128, 196, 233);
+    background-color: transparent;
+}
+.section-eone h3{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.section-eone p{
+    font-size: 16px;
+}
+.sectiong{
+    /* height: 1000px; */
+    padding: 20px;
+    margin: 37px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 150px;
+    border-radius: 20px;
+    background-color: rgb(44, 42, 42);
+}
+.sectiong-one{
+    /* padding: 10px; */
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.sectiong-one p{
+    font-size: 30px;
+    color: rgb(128, 196, 233);
+}
+.sectiong-one h3{
+    font-size: 40px;
+    color: rgb(128, 196, 233);
+}
+.sectiong-two{
+    padding: 30px;
+}
+.sectiong-two form{
+    width: 500px;
+    /* background-color: brown; */
+    height: 500px;
+    padding: 35px;
+}
+.xx{
+    margin-bottom: 30px;
+}
+.sectiong-two label{
+    color: rgb(155, 198, 226);
+    font-size: 16px;
+    font-weight: 400;
+}
+.sectiong-two input{
+    width: 400px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid rgb(155, 198, 226);
+    margin-top: 20px;
+    background: transparent;
+}
+#message{
+    height: 50px;
+}
+#message:focus{
+    background: none;
+    border-color: blue;
+    color: brown;
+}
+.formm{
+    margin-bottom: 15px;
+}
+.sectiong-two button{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+footer{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(128, 196, 233);
+}
+footer h3{
+    font-size: 40px;
+}
+.footer-content{
+    display: flex;
+    gap: 200px;
+    padding: 50px;
+}
+.footer-content-a ul{
+    list-style: none;
+}
+.footer-content-a ul li{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.footer-content-b ul{
+    list-style: none;
+}
+.footer-content-b ul li{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+#btn{
+    width: 260px;
+    border-radius: 20px;
+    border: none;
+    height: 45px;
+    background-color: rgb(233, 233, 150);
+}
+#btn:hover{
+    background-color: black;
+    color: rgb(155, 198, 226);
+}
+.connect{
+    margin-bottom: 20px;
+}
+.footer-email{
+    font-size: 15px;
+    font-weight: 700;
+}
+#footer-email{
+    width: 350px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+#checkbox{
+    margin-bottom: 20px;
+}
+.hr{
+    height: 1px;
+    margin-bottom: 30px;
+    background-color: black;
+}
+.josephine p{
+    color: black;
+}
+.josephine p a{
+    color: rgb(226, 32, 32);
+    text-decoration: none;
+}
+
+
+
+/*
+
+HTML, CSS, JavaScript, and CMS
+SEO and web performance optimization.
+Google Search Console 
+Page speed optimization tools.*/
