@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Console</title>
+    <link rel="stylesheet" href="./styles.css">
+
+
+<!--AOS LINK FOR ANIMATE ON SCROLL-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+
+<!--POPUP LINK FOR POPUP'S-->
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1 data-aos="fade-left">Gaming Console</h1>
+            </div>
+            <div>
+                <ul data-aos="zoom-out-up">
+                    <li><a href="#home" class="home" data-aos="flip-up" >Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+          <h2>Webpage Not Available</h2>
+          <p>The page you are trying to reach is currently unavailable.</p>
+          <button onclick="goBack()" style="color: white;" >Go Back</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

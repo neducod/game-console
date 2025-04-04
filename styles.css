@@ -404,3 +404,50 @@ HTML, CSS, JavaScript, and CMS
 SEO and web performance optimization.
 Google Search Console 
 Page speed optimization tools.*/
+
+
+
+
+/* Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* Popup Box */
+  .popup-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 80%;
+  }
+
+  .popup-box h2 {
+    margin-bottom: 20px;
+    color: #cc0000;
+  }
+
+  .popup-box button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .popup-box button:hover {
+    background-color: #0056b3;
+  }
