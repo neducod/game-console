@@ -1,24 +1,17 @@
+//JAVASCRIPT CODE FOR THE ANIMATION
 /*AOS INTIALIZING*/
 AOS.init({
     duration: 1200, // Animation duration in milliseconds
     once: true,     // Whether animation should happen only once (set to false to repeat on scroll)
   });
 
-// When the user clicks on <div>, open the popup
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
 
 
 
 
 
 
-
-
-
-//POPUP FOR ABOUT.HTML
+//POPUP FOR ABOUT.HTML AND JOIN.HTML
   // Automatically show popup when page loads
   window.onload = function() {
     document.getElementById("popup").style.display = "flex";

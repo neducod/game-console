@@ -65,9 +65,10 @@ nav ul li a{
     border-radius: 20px;
     background-color: transparent;
 }
+
 .div-text button:hover{
     background-color: rgb(233, 233, 150);
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .div-text button a{
@@ -300,20 +301,25 @@ nav ul li a{
 }
 .sectiong-two input{
     width: 400px;
-    height: 25px;
+    height: 35px;
     border: none;
     border-bottom: 1px solid rgb(155, 198, 226);
     margin-top: 20px;
     background: transparent;
 }
+.sectiong-two input:focus{
+    outline: none;
+    font-size: 18px;
+    color: antiquewhite;
+}
 #message{
     height: 50px;
-}
+}/*
 #message:focus{
     background: none;
     border-color: blue;
     color: brown;
-}
+}*/
 .formm{
     margin-bottom: 15px;
 }
@@ -405,90 +411,7 @@ SEO and web performance optimization.
 Google Search Console 
 Page speed optimization tools.*/
 
-.home{
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-.home {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* The actual popup (appears on top) */
-  .home .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-
-
-/* Popup arrow */
-.home .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .home .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
+/*STYLES FOR POP UP INFORMATION*/
 /* Overlay */
 .popup-overlay {
     position: fixed;
@@ -532,3 +455,311 @@ Page speed optimization tools.*/
   .popup-box button:hover {
     background-color: #0056b3;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+/*STYLES FOR ERROR MESSAGE*/
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    margin-top: 250px;
+}
+.message{
+
+}
+
+.message h1{
+    padding-bottom: 100px;
+    padding-left: 10px;
+}
+
+.message #text{
+    padding-right: 33px;
+}
+
+.message #text a{
+    text-decoration: none;
+    color: rgb(168, 196, 214);
+}
+
+.message #text a:hover{
+    color: chocolate;
+}
+.boxes-wrapper{
+    display: grid;
+    justify-content: center;
+   padding-bottom: 100px;
+   padding-top: 50px;
+    /* margin-left: 70px;  */
+}
+
+
+.boxes {
+    --size: 32px;
+    --duration: 800ms;
+    height: calc(var(--size) * 2);
+    width: calc(var(--size) * 3);
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    margin-top: calc(var(--size) * 1.5 * -1);
+    transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+  }
+  
+  .boxes .box {
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  .boxes .box:nth-child(1) {
+    transform: translate(100%, 0);
+    -webkit-animation: box1 var(--duration) linear infinite;
+    animation: box1 var(--duration) linear infinite;
+  }
+  
+  .boxes .box:nth-child(2) {
+    transform: translate(0, 100%);
+    -webkit-animation: box2 var(--duration) linear infinite;
+    animation: box2 var(--duration) linear infinite;
+  }
+  
+  .boxes .box:nth-child(3) {
+    transform: translate(100%, 100%);
+    -webkit-animation: box3 var(--duration) linear infinite;
+    animation: box3 var(--duration) linear infinite;
+  }
+  
+  .boxes .box:nth-child(4) {
+    transform: translate(200%, 0);
+    -webkit-animation: box4 var(--duration) linear infinite;
+    animation: box4 var(--duration) linear infinite;
+  }
+  
+  .boxes .box > div {
+    --background: #5C8DF6;
+    --top: auto;
+    --right: auto;
+    --bottom: auto;
+    --left: auto;
+    --translateZ: calc(var(--size) / 2);
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    top: var(--top);
+    right: var(--right);
+    bottom: var(--bottom);
+    left: var(--left);
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+  }
+  
+  .boxes .box > div:nth-child(1) {
+    --top: 0;
+    --left: 0;
+  }
+  
+  .boxes .box > div:nth-child(2) {
+    --background: #145af2;
+    --right: 0;
+    --rotateY: 90deg;
+  }
+  
+  .boxes .box > div:nth-child(3) {
+    --background: #447cf5;
+    --rotateX: -90deg;
+  }
+  
+  .boxes .box > div:nth-child(4) {
+    --background: #DBE3F4;
+    --top: 0;
+    --left: 0;
+    --translateZ: calc(var(--size) * 3 * -1);
+  }
+  
+  @-webkit-keyframes box1 {
+    0%, 50% {
+      transform: translate(100%, 0);
+    }
+  
+    100% {
+      transform: translate(200%, 0);
+    }
+  }
+  
+  @keyframes box1 {
+    0%, 50% {
+      transform: translate(100%, 0);
+    }
+  
+    100% {
+      transform: translate(200%, 0);
+    }
+  }
+  
+  @-webkit-keyframes box2 {
+    0% {
+      transform: translate(0, 100%);
+    }
+  
+    50% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+  
+  @keyframes box2 {
+    0% {
+      transform: translate(0, 100%);
+    }
+  
+    50% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+  
+  @-webkit-keyframes box3 {
+    0%, 50% {
+      transform: translate(100%, 100%);
+    }
+  
+    100% {
+      transform: translate(0, 100%);
+    }
+  }
+  
+  @keyframes box3 {
+    0%, 50% {
+      transform: translate(100%, 100%);
+    }
+  
+    100% {
+      transform: translate(0, 100%);
+    }
+  }
+  
+  @-webkit-keyframes box4 {
+    0% {
+      transform: translate(200%, 0);
+    }
+  
+    50% {
+      transform: translate(200%, 100%);
+    }
+  
+    100% {
+      transform: translate(100%, 100%);
+    }
+  }
+  
+  @keyframes box4 {
+    0% {
+      transform: translate(200%, 0);
+    }
+  
+    50% {
+      transform: translate(200%, 100%);
+    }
+  
+    100% {
+      transform: translate(100%, 100%);
+    }
+}
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .hero-section-one{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+    .hero-section-one .first{
+        max-width: 100%;
+        background-color: black;
+        color: rgb(128, 196,233);
+    }
+    .div-text{
+        gap: 3px;
+    }
+    .div-text h3{
+        font-size: 20px;
+    }
+    .div-text p{
+        width: 200px;
+    }
+    .div-text button{
+        height: 30px;
+        border: 1px solid white;
+    }
+    .div-text button a{
+        color: rgb(128, 196,233);
+    }
+    .hero-section-one .second{
+        padding-left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+    .hero-section-one .third img{
+        display: block;
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .hero-section-two{
+        display: none;
+    }
+    .another-frame{
+        display: none;
+    }
+    .frame-104{
+        display: none;
+    }
+    .frame-106{
+        display: none;
+    }
+    .frame-107{
+        display: none;
+    }
+    .frame-202{
+        display: none;
+    }
+    .section-e{
+        display: none;
+    }
+    .sectiong{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
