@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 
+
+    <meta name="description" content="This is a landing page for a game website by Josephine Jerome">
+
+    <meta property="og:url" content="https://x.com/nedu_nony.com/">
+
+    <meta property="og:site_name" content="Josephine Jerome">
+
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:title" content="Josephine Jerome">
 
 <!--AOS LINK FOR ANIMATE ON SCROLL-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
@@ -18,19 +28,70 @@
         </div>
         <div>
             <ul data-aos="zoom-out-up">
-                <li><a href="#home" class="home" data-aos="flip-up" onclick="myFunction()" >Home  <span class="popuptext" id="myPopup">Popup text...</span> </a></li>
+                <li><a href="#home" class="home" data-aos="flip-up">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./join.html">Join</a></li>
             </ul>
         </div>
     </nav>
    </header>
+   <div class="timer-container">
+    <h1>Countdown Timer</h1>
+    <div class="timer">
+        <div class="timer-unit">
+            <p class="timer-value" id="days">00</p>
+            <p class="timer-label">Days</p>
+        </div>
+        <div class="timer-unit">
+            <p class="timer-value" id="hours">00</p>
+            <p class="timer-label">Hours</p>
+        </div>
+        <div class="timer-unit">
+            <p class="timer-value" id="minutes">00</p>
+            <p class="timer-label">Minutes</p>
+        </div>
+        <div class="timer-unit">
+            <p class="timer-value" id="seconds">00</p>
+            <p class="timer-label">Seconds</p>
+        </div>
+    </div>
+    <div class="controls">
+        <input type="datetime-local" id="end-time">
+        <button id="start-btn">Start Timer</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    <div class="hero-section-one">
         <div class="hero-section-one first">
             <div class="div-text">
                 <h3  data-aos="fade-up-right" data-aos-duration="2200">Immersive Gaming Experience</h3>
                 <p data-aos="fade-up-right" data-aos-duration="2200">Discover our innovative gaming world designed to captivate players with immersive graphics and compelling narratives.</p>
-                <button data-aos="fade-up-left" ><a href="#">Explore</a></button>
+                <button data-aos="fade-up-left" ><a href="./join.html">Explore</a></button>
             </div>
         </div>
         <div class="hero-section-one second"></div>
@@ -44,7 +105,7 @@
         <img src="./images/img3.png" alt="">
    </div>
    <div class="another-frame">
-        <p data-aos="zoom-in-left">About Us</p>
+        <p data-aos="zoom-in-left" data-aos-duration="1000" >About Us</p>
         <h3 data-aos="zoom-in-right"><a href="#">Our Vision</a></h3>
    </div>
    <div class="frame-104">
@@ -62,25 +123,25 @@
         <h3 data-aos="flip-down"><a href="#">The Gaming Process</a></h3>
     </div>
     <div class="frame-107">
-        <div class="frame-108s" data-aos="zoom-out-left" >
+        <div class="frame-108s" data-aos="zoom-out-left" data-aos-duration="600" >
             <!-- <img src="./images/img7.png" alt=""> -->
             <p>01</p>
             <h4>Step 1</h4>
             <h5>Download your favorite S. Chen gaming app from the app store.</h5>
         </div>
-        <div class="frame-108s" data-aos="zoom-out-right" >
+        <div class="frame-108s" data-aos="zoom-out-right" data-aos-duration="600" >
             <!-- <img src="./images/img7.png" alt=""> -->
             <p>01</p>
             <h4>Step 1</h4>
             <h5>Download your favorite S. Chen gaming app from the app store.</h5>
         </div>
-        <div class="frame-108s" data-aos="zoom-out-left" >
+        <div class="frame-108s" data-aos="zoom-out-left" data-aos-duration="600" >
             <!-- <img src="./images/img7.png" alt=""> -->
             <p>01</p>
             <h4>Step 1</h4>
             <h5>Download your favorite S. Chen gaming app from the app store.</h5>
         </div>
-        <div class="frame-108s" data-aos="zoom-out-right" >
+        <div class="frame-108s" data-aos="zoom-out-right" data-aos-duration="600" >
             <!-- <img src="./images/img7.png" alt=""> -->
             <p>01</p>
             <h4>Step 1</h4>
