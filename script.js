@@ -114,3 +114,28 @@ AOS.init({
        
        return `${year}-${month}-${day}T${hours}:${minutes}`;
    }
+
+
+
+
+
+
+
+//SCROLL BACK TO TOP FUNCTION
+const scrollToTopBtn = document.querySelector(".scroll-to-top");
+
+// Show/hide button based on scroll position
+const toggleScrollToTopButton = () => {
+    scrollToTopBtn.classList.toggle("visible", window.scrollY > 200);
+};
+
+// Smooth scroll to top
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
+window.addEventListener("scroll", toggleScrollToTopButton);
+scrollToTopBtn.addEventListener("click", scrollToTop);
