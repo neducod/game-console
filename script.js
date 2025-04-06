@@ -6,9 +6,17 @@ AOS.init({
   });
 
 
+/*NAVBAR RESPONSIVENESS
+  // Toggle mobile menu
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navbarMenu = document.querySelector('.navbar-menu');
+  
+  mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      navbarMenu.classList.toggle('active');
+  });
 
-
-
+*/
 
 
 //POPUP FOR ABOUT.HTML AND JOIN.HTML
@@ -139,3 +147,67 @@ const scrollToTop = () => {
 
 window.addEventListener("scroll", toggleScrollToTopButton);
 scrollToTopBtn.addEventListener("click", scrollToTop);
+
+
+
+
+//JAVASCRIPT CODE FOR THE SECOND FORM
+document.getElementById("myFormm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Stop form from submitting by default
+
+  const emailInput = document.getElementById("footeremail");
+  const checkbox = document.getElementById("checkbox");
+
+  const email = emailInput.value.trim();
+
+  // Check if email is empty
+  if (email === "") {
+      alert("Please enter your email.");
+      emailInput.focus();
+      return;
+  }
+
+  // Check if email ends with @gmail.com
+  if (!email.endsWith("@gmail.com")) {
+      alert("Email must be a valid Gmail address ending with '@gmail.com'.");
+      emailInput.focus();
+      return;
+  }
+
+  // Check if checkbox is checked
+  if (!checkbox.checked) {
+      alert("Please check the box to subscribe to the newsletter.");
+      return;
+  }
+
+  // ✅ If all validations pass
+  // Redirect to another webpage (change the URL to where you want to go)
+  window.location.href = "https://x.com/nedu_nony";
+});
+
+
+//JAVASCRIPT CODE FOR SLIDESHOW REVIEW
+let slideIndex = 0;
+const reviews = document.querySelectorAll(".review");
+const dots = document.querySelectorAll(".dot");
+
+function showSlides() {
+    reviews.forEach((review, i) => {
+        review.classList.remove("active");
+        dots[i].classList.remove("active-dot");
+    });
+    reviews[slideIndex].classList.add("active");
+    dots[slideIndex].classList.add("active-dot");
+}
+
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % reviews.length;
+    showSlides();
+}
+
+function currentSlide(index) {
+    slideIndex = index;
+    showSlides();
+}
+
+setInterval(nextSlide, 3000); // Change slide every 3 seconds

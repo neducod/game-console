@@ -20,18 +20,20 @@ nav{
     margin-top: 30px;
     border-radius: 18px;
 }
-nav ul{
+.nav-menu ul{
     display: flex;
     gap: 30px
 }
-nav ul li{
+.nav-menu ul li{
+    display: flex;
     list-style-type: none;
 }
-nav ul li a{
+.nav-menu ul li a{
     text-decoration: none;
     color: black;
     font-weight: 900;
 }
+
 .hero-section-one{
     display: flex;
     gap: 20px;
@@ -208,10 +210,40 @@ nav ul li a{
     border-radius: 20px;
 }
 .frame-202 .onee{
-    width: 300px;
+    max-width: 600px; 
     height: 507px;
     border-radius: 20px;
+    position: relative;
     background-color: rgb(44, 42, 42);
+}
+.sl-wrapper{
+
+}
+.review {
+    display: none;
+    font-size: 20px;
+    padding: 20px;
+}
+.active {
+    display: block;
+}
+.dots {
+    position: absolute;
+    
+    text-align: center;
+    margin-top: 10px;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.active-dot {
+    background-color: #6200ea;
 }
 .section-e{
     display: flex;
@@ -371,6 +403,14 @@ footer h3{
     background-color: black;
     color: rgb(155, 198, 226);
 }
+#btn a{
+    text-decoration: none;
+    color: black;
+}
+#btn:hover a:hover{
+    background-color: black;
+    /* color: rgb(155, 198, 226); */
+}
 .connect{
     margin-bottom: 20px;
 }
@@ -383,8 +423,19 @@ footer h3{
     height: 45px;
     background-color: transparent;
     border: none;
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
+    outline: none;
+    color: rgb(233, 233, 150);
+    font-size: 17px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid black; 
+}
+#footer-email:focus{
+    outline: none;
+    border-bottom: 1px solid black; 
+}
+.checkbox{
+    display: flex;
+    gap: 0px;
 }
 #checkbox{
     margin-bottom: 20px;
@@ -721,7 +772,7 @@ Page speed optimization tools.*/
 /* RESPONSIVENESS */
 
 @media only screen and (max-width: 600px) {
-    nav{
+    *nav{
         display: none;
     }
     header{
